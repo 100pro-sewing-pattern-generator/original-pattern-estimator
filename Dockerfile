@@ -26,7 +26,7 @@ RUN pip install \
     -f https://data.pyg.org/whl/torch-2.8.0+cpu.html
 
 RUN pip install --no-build-isolation -r Garment-Pattern-Estimation/requirements.txt
-ENV PYTHONPATH="/workspace/Garment-Pattern-Generator/package"
+ENV PYTHONPATH="/workspace/Garment-Pattern-Generator/packages"
 
 WORKDIR /workspace/Garment-Pattern-Estimation
 
