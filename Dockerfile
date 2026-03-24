@@ -30,4 +30,4 @@ ENV PYTHONPATH="/workspace/Garment-Pattern-Generator/packages"
 
 WORKDIR /workspace/Garment-Pattern-Estimation
 
-CMD ["python", "nn/evaluation_scripts/predict_per_example.py", "--file", "/workspace/Garment-Pattern-Estimation/scaled.obj"]
+CMD ["uvicorn", "nn.evaluation_scripts.server:app", "--host", "0.0.0.0", "--port", "8000"]

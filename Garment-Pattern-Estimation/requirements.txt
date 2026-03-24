@@ -57,3 +57,7 @@ wandb==0.25.0
 webencodings==0.5.1
 WMI==1.4.9
 yarl==1.22.0
+fastapi
+uvicorn
+python-multipart
+trimesh
